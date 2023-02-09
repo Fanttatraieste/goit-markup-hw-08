@@ -1,0 +1,176 @@
+/* Modal stilization */
+
+/* Stilizarea ferestrei */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::before {
+    content: " ";
+  }
+  &-inner {
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+    position: relative;
+  }
+  &-close {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+  &-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--subheading-color);
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}
+
+/* Stilizarea formularului */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  gap: 10px;
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    padding: 0px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--contact-nav-color);
+    position: relative;
+    outline: none;
+    box-shadow: none;
+    svg {
+      position: absolute;
+      top: 25px;
+      left: 15px;
+      height: 20px;
+      width: 20px;
+      fill: #212121;
+    }
+    &:hover svg,
+    &:focus-within svg {
+      fill: var(--brand-color);
+    }
+  }
+  input,
+  textarea {
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    box-shadow: none;
+  }
+  input {
+    height: 40px;
+    padding-left: 45px;
+    &:hover,
+    &:focus {
+      border: 1px solid var(--brand-color);
+      cursor: pointer;
+    }
+  }
+  textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    &:hover,
+    &:focus {
+      border: 1px solid var(--brand-color);
+      cursor: pointer;
+    }
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &:focus::placeholder,
+    &:hover::placeholder {
+      color: var(--brand-color);
+    }
+  }
+}
+
+.form-button {
+  padding: 10px 80px;
+  max-width: 200px;
+  height: 50px;
+  align-self: center;
+}
+
+/* Stilizare terms and conditions */
+.form-check {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .form-checkbox-replace {
+  border-color: var(--brand-color);
+  background-color: var(--brand-color);
+}
+
+.form-checkbox-replace {
+  display: inline-block;
+  border: 1.5px solid #212121;
+  width: 14px;
+  height: 14px;
+  align-self: center;
+  border-radius: 2px;
+  svg {
+    position: relative;
+    bottom: 3px;
+    right: 0.5px;
+  }
+  .colored-terms {
+    color: var(--brand-color);
+    text-decoration: underline;
+  }
+}

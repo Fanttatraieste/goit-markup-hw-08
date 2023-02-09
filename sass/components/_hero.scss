@@ -1,0 +1,30 @@
+@import "../utils/vars";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url("../images/background-images/background-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    max-width: 696px;
+    text-align: center;
+  }
+  &-button {
+    padding: 10px 20px;
+  }
+}

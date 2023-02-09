@@ -1,0 +1,110 @@
+/* Footer section */
+.footer {
+  background-color: var(--footer-color);
+  padding: 60px 0;
+  .container {
+    display: flex;
+    gap: 93px;
+  }
+  .logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    &-studio {
+      color: var(--white-color);
+    }
+  }
+}
+
+/* First div of the footer */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.footer-list-item {
+  .footer-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    &:hover {
+      color: var(--white-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+/* Second div of the footer */
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .title {
+    color: var(--white-color);
+  }
+  .icon-grid {
+    display: flex;
+    margin: 0;
+    .icon-link {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      &:hover {
+        background-color: var(--brand-color);
+      }
+    }
+  }
+}
+
+/* Third div of the footer */
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .title {
+    color: var(--white-color);
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 12px;
+  input {
+    background-color: transparent;
+    height: 50px;
+    width: 358px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.footer-button {
+  color: var(--white-color);
+  padding: 10px 28px 10px 43px;
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,92 @@
+/* button section */
+.button-container {
+  display: flex;
+  margin: 0 auto 56px auto;
+  padding-top: 94px;
+  border-top: 1px solid var(--portofolio-color);
+  justify-content: center;
+  &-list {
+    display: flex;
+    gap: 8px;
+  }
+  .button-nav {
+    padding: 6px 22px;
+    color: var(--subheading-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    cursor: pointer;
+    background-color: var(--background-color);
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--brand-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+/* Products section */
+.products-grid {
+  .grid-item {
+    flex: 1 0 30%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    max-width: 370px;
+    .subtitle {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 36px;
+      letter-spacing: 0.06em;
+      color: var(--subheading-color);
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+    .text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+      color: var(--contact-nav-color);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  margin-bottom: 94px;
+}
+
+/* Overlay stilization */
+.products-item {
+  .overlay {
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294px;
+    transform: translatey(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .overlay {
+    transform: translatex(0);
+    cursor: pointer;
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hidden-text {
+    width: 322;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin: 63px 24px 91px 24px;
+  }
+}

@@ -1,0 +1,34 @@
+/* Strong points stilization */
+.strong-points-container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.strong-points-grid {
+  .grid-item {
+    flex: 1 0 20%;
+  }
+}
+
+.strong-points {
+  .title {
+    color: var(--subheading-color);
+    margin-bottom: 10px;
+  }
+  .text {
+    color: var(--contact-nav-color);
+  }
+  &-icon-container {
+    display: flex;
+    background-color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    padding: 25px 101.54px;
+    margin-bottom: 30px;
+  }
+}
+
+.strong-points-icon {
+  width: 70px;
+  height: 70px;
+}

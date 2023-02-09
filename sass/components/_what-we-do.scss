@@ -1,0 +1,33 @@
+/* What we do section */
+
+.what-we-do-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 94px;
+}
+
+.what-we-do-grid {
+  .grid-item {
+    flex: 1 0 30%;
+    position: relative;
+    height: 294px;
+  }
+}
+
+.what-we-do-overlay {
+  position: absolute;
+  bottom: 0px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  p {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

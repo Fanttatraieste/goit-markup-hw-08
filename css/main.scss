@@ -1,0 +1,78 @@
+@import "../sass/components/header";
+@import "../sass/components/hero";
+@import "../sass/components/strong_points";
+@import "../sass/components/what-we-do";
+@import "../sass/components/our-team";
+@import "../sass/components/customers";
+@import "../sass/components/footer";
+@import "../sass/components/modal";
+@import "../sass/components/products";
+.unstyled-list {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--subheading-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
