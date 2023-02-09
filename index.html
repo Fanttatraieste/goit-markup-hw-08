@@ -98,7 +98,7 @@
       </div>
     </div>
     <!-- Header -->
-    <header class="page-header">
+    <header class="container page-header">
       <div>
         <a class="logo" href="index.html"
           ><span class="logo-web">Web</span
@@ -117,26 +117,26 @@
           <a class="menu__link" href="contacts.html"> Contacts </a>
         </li>
       </ul>
-      <!--
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="mailto:info@devstudio.com">
-              <svg width="10" height="10">
-                <use href="./images/svgs/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="tel:+12127724150">
-              <svg width="10" height="10">
-                <use href="./images/svgs/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +1 212-772-4150</a
-            >
-          </li>
-        </ul>
-      -->
+
+      <ul class="social-menu">
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="mailto:info@devstudio.com">
+            <svg class="social-menu__icon">
+              <use href="./images/svgs/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="tel:+12127724150">
+            <svg class="social-menu__icon">
+              <use href="./images/svgs/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +1 212-772-4150</a
+          >
+        </li>
+      </ul>
+
       <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
@@ -166,11 +166,11 @@
         </button>
       </section>
       <!-- Strong points section -->
-      <section class="container strong-points-container">
-        <ul class="unstyled-list grid strong-points-grid">
-          <li class="grid-item strong-points">
-            <span class="strong-points-icon-container">
-              <svg class="strong-points-icon">
+      <section class="container asset">
+        <ul class="grid asset__grid">
+          <li class="grid__item">
+            <span class="asset__icon__div">
+              <svg class="asset__icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </span>
@@ -180,9 +180,9 @@
               develop a customized solution.
             </p>
           </li>
-          <li class="grid-item strong-points">
-            <span class="strong-points-icon-container">
-              <svg class="strong-points-icon">
+          <li class="grid__item">
+            <span class="asset__icon__div">
+              <svg class="asset__icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-clock"></use>
               </svg>
             </span>
@@ -192,9 +192,9 @@
               the company: respect your time and deadlines.
             </p>
           </li>
-          <li class="grid-item strong-points">
-            <span class="strong-points-icon-container">
-              <svg class="strong-points-icon">
+          <li class="grid__item">
+            <span class="asset__icon__div">
+              <svg class="asset__icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-diagram"></use>
               </svg>
             </span>
@@ -204,9 +204,9 @@
               solution development and implementation.
             </p>
           </li>
-          <li class="grid-item strong-points">
-            <span class="strong-points-icon-container">
-              <svg class="strong-points-icon">
+          <li class="grid__item">
+            <span class="asset__icon__div">
+              <svg class="asset__icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-astronaut"></use>
               </svg>
             </span>
@@ -655,7 +655,7 @@
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="js-close-menu close-menu">
         <svg
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -663,7 +663,6 @@
           height="24"
         >
           <path
-            fill-rule="evenodd"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
             clip-rule="evenodd"
           ></path>
@@ -671,18 +670,54 @@
       </button>
 
       <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="link" href="studio.html"> Studio </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="portofolio.html"> Portofolio </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> Contacts </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu mobile-menu--1">
+        <li class="mobile-menu__item">
+          <a class="link link1" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link link2" href="tel:+12127724150"> +1 212-772-4150</a>
+        </li>
+      </ul>
+
+      <ul class="social-links">
         <li>
-          <a href="studio.html"> Studio </a>
+          <a href="https://www.instagram.com/eusuntdorian/" target="_blank"
+            >Instagram</a
+          >
         </li>
         <li>
-          <a href="portofolio.html"> Portofolio </a>
+          <a href="images/svgs/symbol-defs.svg#icon-twitter" target="_blank"
+            >Twitter</a
+          >
         </li>
         <li>
-          <a href="contacts.html"> Contacts </a>
+          <a href="images/svgs/symbol-defs.svg#icon-facebook" target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            class="link3"
+            href="https://www.linkedin.com/in/uta-vlad-719b221a2/"
+            target="_blank"
+            >LinkedIn</a
+          >
         </li>
       </ul>
     </div>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -1,7 +1,13 @@
-@import "../sass/components/header.scss";
 @import "../sass/utils/vars.scss";
+@import "../sass/components/header.scss";
 @import "../sass/components/modal.scss";
 @import "../sass/components/mobile-menu";
+@import "../sass/components/strong_points";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
 body {
   font-family: "Roboto";
@@ -18,9 +24,70 @@ ul {
 a {
   text-decoration: none;
 }
+
 p {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.container {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-nav-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--subheading-color);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  &__item {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+  .grid {
+    &__item {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: calc((100% - 30px) / 2);
+      height: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
+  .grid {
+    &__item {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
 }
