@@ -1,6 +1,7 @@
 /* button section */
 .button-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto 56px auto;
   padding-top: 94px;
   border-top: 1px solid var(--portofolio-color);
@@ -32,12 +33,14 @@
 
 /* Products section */
 .products-grid {
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 60px;
   .grid-item {
-    flex: 1 0 30%;
     position: relative;
     overflow: hidden;
     border: 1px solid #eeeeee;
-    max-width: 370px;
+    width: 100%;
     .subtitle {
       font-weight: 700;
       font-size: 18px;
@@ -46,6 +49,7 @@
       color: var(--subheading-color);
       margin-top: 20px;
       margin-bottom: 4px;
+      text-align: center;
     }
     .text {
       font-weight: 400;
@@ -57,7 +61,6 @@
       margin-bottom: 20px;
     }
   }
-  margin-bottom: 94px;
 }
 
 /* Overlay stilization */
@@ -88,5 +91,21 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     margin: 63px 24px 91px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products-grid {
+    .grid-item {
+      max-width: 352px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products-grid {
+    .grid-item {
+      maxi-width: 370px;
+    }
   }
 }

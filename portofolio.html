@@ -13,55 +13,64 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header-page">
-    <div class="container header-container">
-      <div class="header-item">
-        <a class="link logo" href="index.html"
-          ><span class="logo-web">Web</span
-          ><span class="logo-studio">Studio</span></a
-        >
-      </div>
-      <nav class="header-item">
-        <ul class="unstyled-list nav-list">
-          <li class="nav-list-item">
-            <a class="nav-link link selected-item" href="studio.html">
-              Studio
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link link selected-item" href="portofolio.html">
-              Portofolio
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link link selected-item" href="contacts.html">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="unstyled-list header-social-list header-item">
-        <li class="nav-list-item">
-          <a
-            class="nav-link link selected-item1"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="header-icon1">
-              <use href="./images/svgs/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-link link selected-item1" href="tel:+12127724150">
-            <svg class="header-icon2">
-              <use href="./images/svgs/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +1 212-772-4150</a
-          >
-        </li>
-      </ul>
+  <header class="container page-header">
+    <div>
+      <a class="logo" href="index.html"
+        ><span class="logo-web">Web</span
+        ><span class="logo-studio">Studio</span></a
+      >
     </div>
+
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="studio.html"> Studio </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="portofolio.html"> Portofolio </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="contacts.html"> Contacts </a>
+      </li>
+    </ul>
+
+    <ul class="social-menu">
+      <li class="social-menu__item">
+        <a class="social-menu__link" href="mailto:info@devstudio.com">
+          <svg class="social-menu__icon">
+            <use href="./images/svgs/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          info@devstudio.com</a
+        >
+      </li>
+      <li class="social-menu__item">
+        <a class="social-menu__link" href="tel:+12127724150">
+          <svg class="social-menu__icon">
+            <use href="./images/svgs/symbol-defs.svg#icon-smartphone"></use>
+          </svg>
+          +1 212-772-4150</a
+        >
+      </li>
+    </ul>
+
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        width="24"
+        height="24"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
   </header>
   <main>
     <!-- Button section -->
@@ -185,39 +194,37 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
-        <a class="link logo" href="index.html"
+        <a class="logo" href="index.html"
           ><span class="logo-web">Web</span
           ><span class="logo-studio">Studio</span></a
         >
-        <ul class="unstyled-list footer-links-list">
-          <li class="footer-list-item">
+        <ul class="footer-links__list">
+          <li class="footer-links__item">
             <a
-              class="link footer-link"
+              class="footer-link footer-link1"
               href="https://goo.gl/maps/kZz2s6Fq5RV42a5dA"
               target="_blank"
               >695 Park Ave, NY 10065, USA</a
             >
           </li>
-          <li class="footer-list-item">
-            <a class="link footer-link" href="mailto:info@devstudio.com"
+          <li class="footer-links__item">
+            <a class="footer-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="footer-list-item">
-            <a class="link footer-link" href="tel:+12127724150"
-              >+1 212-772-4150</a
-            >
+          <li class="footer-links__item">
+            <a class="footer-link" href="tel:+12127724150">+1 212-772-4150</a>
           </li>
         </ul>
       </div>
       <div class="footer-social-media">
         <p class="title">find us on</p>
-        <ul class="unstyled-list icon-grid">
+        <ul class="icon-grid">
           <li>
             <a
               href="https://www.instagram.com/eusuntdorian/"
               target="_blank"
-              class="icon-link"
+              class="icon-grid__link"
             >
               <svg class="icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-instagram"></use>
@@ -228,7 +235,7 @@
             <a
               href="https://twitter.com/?lang=en"
               target="_blank"
-              class="icon-link"
+              class="icon-grid__link"
             >
               <svg class="icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-twitter"></use>
@@ -239,7 +246,7 @@
             <a
               href="https://www.facebook.com/silviu.gherman.186"
               target="_blank"
-              class="icon-link"
+              class="icon-grid__link"
             >
               <svg class="icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-facebook"></use>
@@ -250,7 +257,7 @@
             <a
               href="https://www.linkedin.com/in/uta-vlad-719b221a2/"
               target="_blank"
-              class="icon-link"
+              class="icon-grid__link"
             >
               <svg class="icon">
                 <use href="./images/svgs/symbol-defs.svg#icon-linkedin"></use>
@@ -259,11 +266,11 @@
           </li>
         </ul>
       </div>
-      <div class="footer-subscribe">
+      <div class="subscribe">
         <h2 class="title">Subscribe to the newsletter</h2>
-        <form class="subscribe-form">
+        <form class="subscribe__form">
           <input type="email" name="email" placeholder="E-mail" />
-          <button class="button footer-button" type="button">
+          <button class="button footer__button" type="button">
             Subscribe
             <svg>
               <use href="./images/svgs/symbol-defs2.svg#icon-send"></use>
@@ -273,4 +280,75 @@
       </div>
     </div>
   </footer>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="js-close-menu close-menu">
+      <svg
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item">
+        <a class="link" href="studio.html"> Studio </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="link" href="portofolio.html"> Portofolio </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="link" href="contacts.html"> Contacts </a>
+      </li>
+    </ul>
+
+    <ul class="mobile-menu mobile-menu--1">
+      <li class="mobile-menu__item">
+        <a class="link link1" href="mailto:info@devstudio.com">
+          info@devstudio.com</a
+        >
+      </li>
+      <li class="mobile-menu__item">
+        <a class="link link2" href="tel:+12127724150"> +1 212-772-4150</a>
+      </li>
+    </ul>
+
+    <ul class="social-links">
+      <li>
+        <a href="https://www.instagram.com/eusuntdorian/" target="_blank"
+          >Instagram</a
+        >
+      </li>
+      <li>
+        <a href="images/svgs/symbol-defs.svg#icon-twitter" target="_blank"
+          >Twitter</a
+        >
+      </li>
+      <li>
+        <a href="images/svgs/symbol-defs.svg#icon-facebook" target="_blank"
+          >Facebook</a
+        >
+      </li>
+      <li>
+        <a
+          class="link3"
+          href="https://www.linkedin.com/in/uta-vlad-719b221a2/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </li>
+    </ul>
+  </div>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>

@@ -133,7 +133,27 @@
 @media screen and (min-width: 1024px) {
   .footer {
     .container {
-      gap: 93px;
+      gap: 90px;
+    }
+    .footer-links {
+      align-items: flex-start;
+    }
+    .footer-links__list {
+      align-items: flex-start;
+    }
+    .footer-social-media {
+      align-items: flex-start;
+    }
+    .subscribe {
+      align-items: flex-start;
+      margin-bottom: auto;
+      max-width: 550px;
+    }
+    .subscribe__form {
+      flex-direction: row;
+      input {
+        max-width: 350px;
+      }
     }
   }
 }
