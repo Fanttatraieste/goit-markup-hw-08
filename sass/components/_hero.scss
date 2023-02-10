@@ -1,30 +1,50 @@
-@import "../utils/vars";
-
+/* Hero section */
 .hero {
   display: flex;
+  max-width: 768px;
+  height: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   background: rgba(47, 48, 58, 0.4);
-  background-image: url("../images/background-images/background-hero.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../images/background-images/hero-480w.jpg");
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-position: center center;
 
-  &-title {
+  &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     color: var(--white-color);
-    max-width: 696px;
+    max-width: 360px;
     text-align: center;
   }
-  &-button {
+  &__button {
     padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1024px;
+    height: 400px;
+    background-image: url("../images/background-images/hero-768w.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: url("../images/background-images/hero-1600w.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
   }
 }
