@@ -1,68 +1,68 @@
 /* Our team stilization */
 .our-team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: var(--background-color);
   .container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    gap: 30px;
   }
-  &-subtitle {
+
+  &__subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(----subheading-color);
     margin-top: 30px;
+    margin-bottom: 10px;
   }
-  &-text {
+  &__text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--contact-nav-color);
-    margin-top: 10px;
-    margin-bottom: 16px;
   }
 }
 
-.our-team-grid {
-  .grid-item {
-    flex: 1 0 20%;
+.our-team__grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-shrink: 1;
+
+  .grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    max-width: 270px;
+  }
+
+  .icon-grid {
+    margin-bottom: 24px;
+    margin-top: 16px;
+    gap: 10px;
   }
 }
 
-.icon-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--icon-color);
-  .icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+@media screen and (min-width: 1024px) {
+  .our-team {
+    padding: 94px 0;
+    .container {
+      gap: 50px;
+    }
   }
-  &:hover {
-    color: var(--white-color);
-    background-color: var(--brand-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
 
-.icon-grid {
-  gap: 10px !important;
-  max-width: 80%;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  .our-team__grid {
+    .grid__item {
+      max-width: 270px;
+    }
+  }
 }

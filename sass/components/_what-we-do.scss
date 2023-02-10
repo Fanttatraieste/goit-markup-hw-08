@@ -1,17 +1,20 @@
 /* What we do section */
 
 .what-we-do-container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-bottom: 94px;
+  display: none;
 }
 
 .what-we-do-grid {
-  .grid-item {
-    flex: 1 0 30%;
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  .grid__item {
+    max-width: 30%;
+    flex-shrink: 1;
+    flex-grow: 1;
     position: relative;
     height: 294px;
+    margin: 0px;
   }
 }
 
@@ -29,5 +32,16 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .what-we-do-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 94px;
+    align-items: center;
+    justify-content: center;
   }
 }
