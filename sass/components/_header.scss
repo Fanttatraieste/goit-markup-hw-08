@@ -57,19 +57,20 @@
       color: var(--brand-color);
     }
   }
-  &__icon {
+  &__icon1,
+  &__icon2 {
     fill: currentColor;
     margin-right: 8px;
     position: relative;
     top: 2px;
-    &:first-child {
-      width: 14px;
-      height: 10px;
-    }
-    &:last-child {
-      width: 10px;
-      height: 14px;
-    }
+  }
+  &__icon1 {
+    width: 12px;
+    height: 10px;
+  }
+  &__icon2 {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -94,5 +95,13 @@
   .social-menu {
     flex-direction: row;
     gap: 40px;
+    &__icon1 {
+      width: 16px;
+      height: 12px;
+    }
+    &__icon2 {
+      width: 12px;
+      height: 16px;
+    }
   }
 }
